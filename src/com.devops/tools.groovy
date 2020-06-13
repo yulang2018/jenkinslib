@@ -6,5 +6,5 @@ package com.devops
  * @return
  */
 def printMessgae(content){
-    print(content);
+    println(content)
 }

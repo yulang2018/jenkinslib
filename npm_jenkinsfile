@@ -1,0 +1,15 @@
+  
+pipeline{
+
+  agent{node{label "master"}}
+  stages{
+    stage("bulid"){
+      steps{
+        script{
+          npmHome=tool "NPM"
+          sh "${npmHome}/bin/npm -v"
+         }
+      }
+    }
+  }
+}
